@@ -1,0 +1,80 @@
+header{
+    text-align: center;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+nav{
+    padding: 10px 0px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+main{
+    width: 70%;
+    margin: 50px auto;
+}
+/* main > div{
+    border: 1px solid red
+} */
+
+
+.index-about{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 50px;
+}
+.index-about img{
+    width: 30%;
+}
+.index-about div{
+    padding: 0px 40px;
+}
+.index-about p{
+    line-height: 28px;
+}
+
+.skills-tools{
+    padding-left: 10px;
+}
+.skills-tools h2{
+    padding: 10px 40px;
+}
+.skills-tools li{
+    list-style: disclosure-closed;
+    padding: 5px;
+}
+
+
+.projects-showcase{
+    padding: 20px 40px;
+}
+.project-showcase--div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.project-div,.showcase-div{
+    display: flex;
+    flex-direction: column;
+
+}
+.projects-showcase img{
+    width: 300px;
+    border: 1px solid black;
+}
+.projects-showcase a{
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* footer styling */
+footer{
+    text-align: center;
+    border-top: 2px solid black;
+
+}
