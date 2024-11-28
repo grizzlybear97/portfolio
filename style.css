@@ -14,16 +14,17 @@ nav{
 main{
     width: 70%;
     margin: 50px auto;
+    padding-left: 70px;
 }
 /* main > div{
     border: 1px solid red
 } */
 
 
+/* index html styling */
 .index-about{
     display: flex;
     flex-wrap: nowrap;
-    padding: 50px;
 }
 .index-about img{
     width: 30%;
@@ -35,11 +36,8 @@ main{
     line-height: 28px;
 }
 
-.skills-tools{
-    padding-left: 10px;
-}
 .skills-tools h2{
-    padding: 10px 40px;
+    padding: 10px 0px;
 }
 .skills-tools li{
     list-style: disclosure-closed;
@@ -48,7 +46,7 @@ main{
 
 
 .projects-showcase{
-    padding: 20px 40px;
+    padding: 20px 0px;
 }
 .project-showcase--div{
     display: flex;
@@ -61,7 +59,7 @@ main{
     flex-direction: column;
 
 }
-.projects-showcase img{
+.projects-showcase img,.stand-img{
     width: 300px;
     border: 1px solid black;
 }
@@ -70,6 +68,15 @@ main{
     padding: 20px;
     text-decoration: none;
     color: black;
+}
+
+/* projects.html styling */
+.projects-div{
+    display: flex;
+    margin: 30px 0px;
+}
+.links-description{
+    padding-left: 40px;
 }
 
 /* footer styling */
