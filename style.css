@@ -8,8 +8,8 @@ header a{
 }
 nav{
     padding: 10px 0px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 main{
     width: 70%;
@@ -67,7 +67,7 @@ main{
 }
 .projects-showcase a{
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     text-decoration: none;
     color: black;
 }
@@ -90,7 +90,9 @@ main{
 }
 .showcase img{
     margin: 10px;
+    height: 93%;
 }
+
 
 /* socials.html styling */
 .contact-form,
