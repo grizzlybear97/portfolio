@@ -14,7 +14,7 @@ nav{
 main{
     width: 70%;
     margin: 50px auto;
-    padding-left: 70px;
+    padding:0px 70px;
 }
 /* main > div{
     border: 1px solid red
@@ -59,7 +59,9 @@ main{
     flex-direction: column;
 
 }
-.projects-showcase img,.stand-img{
+.projects-showcase img,
+.stand-img,
+.showcase img{
     width: 300px;
     border: 1px solid black;
 }
@@ -77,6 +79,57 @@ main{
 }
 .links-description{
     padding-left: 40px;
+}
+
+/* showcase.html styling */
+.showcase{
+    display: flex;
+    justify-content:space-between;
+    padding: 0px 44px;
+    flex-wrap: wrap;
+}
+.showcase img{
+    margin: 10px;
+}
+
+/* socials.html styling */
+.contact-form,
+.social-links{
+    margin: 0 200px;
+}
+label{
+    display: inline-block;
+    width: 100px;
+}
+input{
+    height: 30px;
+}
+input,
+textarea{
+    width: 300px;
+}
+fieldset div{
+    margin: 30px 50px;
+}
+.message-box{
+    position: relative;
+    top: -69px;
+}
+.send-message-btn{
+    text-align: center;
+}
+.send-message-btn button{
+    width: 110px;
+    height: 30px;
+}
+
+.social-links div{
+    display: flex;
+    justify-content: center;
+}
+.social-links img{
+    padding: 0 10px;
+    width: 50px;
 }
 
 /* footer styling */
