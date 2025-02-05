@@ -1,0 +1,8 @@
+@font-face {
+    font-family: barcode;
+    src: url(../fonts/LibreBarcode128Text-Regular.ttf);
+}
+@font-face {
+    font-family: arimo;
+    src: url(../fonts/Arimo-VariableFont_wght.ttf);
+}
