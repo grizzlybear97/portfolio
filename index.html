@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
         <div class="header">
             <div class="hello-wish">
-                <p>hello visitor</p>
+                <h1>hello visitor</h1>
                 <p>( つ ◕_◕ )つ</p>
             </div>
             <div class="hello-msg">
@@ -20,74 +21,93 @@
         </div>
     </header>
     <main>
-        <div class="main">
-            <div class="about-me">
-                <div class="about-me__head-pic">
-                    <h2>about me</h2>
-                    <img src="hollow.jpg" alt="totally me image" style="width: 300px;">
-                    <span>(totally me)</span>
-                </div>
-                <div class="about-me__info">
-                    <p>Hello! sandeep here. I'm a junior front-end
-                        web developer from Hyderabad, India. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ut ab, eius culpa nesciunt sequi inventore id alias suscipit corporis, soluta aliquid quo dicta est. Unde dolores voluptatum pariatur labore.
-                    </p>
-                </div>
+        <div class="about">
+            <div class="heading">
+                <h2>about<br> me</h2>
             </div>
-            <div class="skills-tools">
-                <div class="heading">
-                    <h2>skills &amp; tools</h2>
-                </div>
-                <div class="images">
-                    <div class="square" style="width: 100px; height: 100px; background-color: grey;"></div>
-                    <div class="square" style="width: 100px; height: 100px; background-color: grey;"></div>
-                </div>
+            <div class="image">
+                <img src="hollow.jpg" alt="totally me image">
+                <!-- <span>(totally me)</span> -->
             </div>
-            <div class="stuff-made">
-                <div class="heading">
-                    <h2>stuff i made</h2>
-                </div>
-                <div class="stuff">
-                    <div class="" style="width: 150px; height: 100px; background-color: grey;"></div>
-                    <div class="" style="width: 150px; height: 100px; background-color: grey;"></div>
-                </div>
-                <div class="more">
-                    <p>(visit github to see more)</p>
-                    <!-- todo: add arrow png -->
-                </div>
+            <div class="info">
+                <p>Hello! sandeep here. I'm a junior front-end
+                    web developer from Hyderabad, India. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ut ab, eius culpa nesciunt sequi inventore id alias suscipit corporis, soluta aliquid quo dicta est. Unde dolores voluptatum pariatur labore.
+                </p>
             </div>
-            <div class="find-me">
-                <div class="heading">
-                    <h2>find me here</h2>
-                </div>
-                <div class="links">
-                    <div class="" style="height: 100px; width: 100px; border-radius: 50%; background-color: grey;"></div>
-                    <div class="" style="height: 100px; width: 100px; border-radius: 50%; background-color: grey;"></div>
-                </div>
+        </div>
+        <div class="skills-tools">
+            <div class="images">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
             </div>
-            <div class="contact-me">
-                <div class="heading">
-                    <h2>contact me</h2>
+            <div class="heading">
+                <h2>skills &amp; <br>tools</h2>
+            </div>
+
+        </div>
+        <div class="stuff-made">
+            <div class="heading">
+                <h2>stuff i <br>made</h2>
+            </div>
+            <div class="stuff">
+                <div class=""></div>
+                <div class=""></div>
+            </div>
+            <div class="more">
+                <div class="button">
+                    <button><div class="span" style="text-align: center;">&rightarrow;</div></button>
                 </div>
-                <div class="form">
-                    <form action="/nowhere" method="post">
+                <p>(visit github to see more)</p>
+            </div>
+        </div>
+        <div class="find-me">
+            <div class="heading">
+                <h2>find me <br>here</h2>
+            </div>
+            <div class="links">
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+            </div>
+        </div>
+        <div class="contact-me">
+            <div class="heading">
+                <h2>contact <br>me</h2>
+            </div>
+            <div class="form">
+                <form action="/nowhere" method="post">
+                    <div class="form__names">
                         <label for="first">
                             <input type="text" name="first_name" id="first" placeholder="first name" required>
                         </label>
                         <label for="last">
                             <input type="text" name="last_name" id="last" placeholder="last name" required>
                         </label>
+                    </div>
+                    <div class="form__email">
                         <label for="email">
                             <input type="email" name="email" id="email" placeholder="email (optional)">
                         </label>
+                    </div>
+                    <div class="form__message">
                         <label for="message">
-                            <textarea name="message" id="message" rows="7" cols="20" placeholder="message"></textarea>
+                            <textarea name="message" id="message" rows="3" cols="20" placeholder="message"></textarea>
                         </label>
-                        <button disabled="disabled">
-                            (send me a message)
-                            <!-- todo add arrow png -->
-                        </button>
-                    </form>
+                    </div>
+                </form>
+            </div>
+            <div class="more">
+                <div class="button">
+                    <button><div class="span" style="text-align: center;">&rightarrow;</div></button>
                 </div>
+                <p>(send me an message)</p>
             </div>
         </div>
     </main>

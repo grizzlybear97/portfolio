@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 30px;
+}
+
+main > div {
+    margin: 40px 0;
+}
+
+/* header */
+.header .hello-wish {
+    display: flex;
+    column-gap: 10px;
+}
+.header .hello-wish h1 {
+    margin-top: 10px;
+}
+.header .hello-wish p {
+    font-size: 40px;
+}
+.header .hello-msg p{
+    margin-top: -10px;
+    font-size: 30px;
+}
+
+
+/* about section */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.about .heading {
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+.about .image {
+    flex-grow: 1.5;
+    flex-basis: 20%;
+    flex-shrink: 0;
+}
+.about .image img {
+    max-width: 250px;
+}
+.about .info {
+    flex-grow: 2;
+    flex-basis: 40%;
+}
+@media screen and (max-width: 868px) {
+    .about .image {
+        flex-grow: 2;
+    }
+}
+
+
+/* skills and tools section */
+.skills-tools {
+    display: flex;
+    justify-content: space-between;
+}
+.skills-tools .heading {
+    flex-basis: 300px;
+}
+.skills-tools .images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.skills-tools .images > div {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(194, 194, 194);
+}
+
+@media screen and (max-width: 868px) {
+    .skills-tools {
+        flex-flow: column-reverse wrap;
+    }
+    .skills-tools .heading{
+        flex-basis: unset;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .skills-tools .heading br {
+        display: none;
+        border: 1px solid red;
+    }
+}
+
+
+/* stuff section */
+.stuff-made,
+.stuff-made .stuff {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+.stuff-made .stuff > div{
+    width: 200px;
+    height: 150px;
+    background-color: rgb(201, 201, 201);
+}
+.stuff-made .more button {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: none;
+}
+.stuff-made .more .button {
+    text-align: center;
+}
+.stuff-made .more button:hover,
+.stuff-made .more p:hover {
+    cursor: pointer;
+}
+.stuff-made .more {
+    align-self: center;
+}
+
+@media screen and (max-width: 868px) {
+    .stuff-made {
+        flex-flow: column;
+    }
+    .stuff-made .stuff {
+        justify-content: space-evenly;
+    }
+    .stuff-made .heading {
+        align-self: center;
+        margin-bottom: 40px;
+    }
+    .stuff-made .heading br{
+        display: none;
+    }
+}
+
+
+/* socials section */
+.find-me {
+    display: flex;
+    justify-content: space-between;
+}
+.find-me .heading {
+    order: 2;
+}
+.find-me .links {
+    flex-basis: 75%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+.find-me .links > div {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(201, 201, 201);
+}
+
+@media screen and (max-width: 868px) {
+    .find-me {
+        flex-flow: column-reverse;
+    }
+    .find-me .heading {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .find-me .heading br{
+        display: none;
+    }
+}
+
+
+/* contact section */
+.contact-me {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.contact-me .form input,
+.contact-me .form textarea {
+    border: none;
+    font-size: 20px;
+    border-bottom: 1px solid grey;
+}
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-me .more {
+    align-self: center;
+}
+.contact-me .more button {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: none;
+}
+.contact-me .more .button {
+    text-align: center
+}
+.contact-me .more button:hover,
+.contact-me .more p:hover {
+    cursor: pointer;
+}
+.form__email input,
+.form__message textarea{
+    width: 100%;
+}
+
+@media screen and (max-width: 868px) {
+    .contact-me {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-me br {
+        display: none;
+    }
+}

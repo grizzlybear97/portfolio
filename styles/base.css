@@ -6,3 +6,26 @@
     font-family: arimo;
     src: url(../fonts/Arimo-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family: darker;
+    src: url(../fonts/DarkerGrotesque-VariableFont_wght.ttf);
+}
+
+h1 {
+    font-family: barcode, sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+}
+h2 {
+    font-family: arimo, sans-serif;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 80%;
+    letter-spacing: -3px;
+}
+
+p, span {
+    font-family: darker, sans-serif;
+    font-size: 25px;
+    font-weight:500;
+}
