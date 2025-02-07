@@ -9,7 +9,7 @@ body {
 }
 
 main > div {
-    margin: 40px 0;
+    margin: 70px 0;
 }
 
 /* header */
@@ -26,6 +26,13 @@ main > div {
 .header .hello-msg p{
     margin-top: -10px;
     font-size: 30px;
+}
+
+@media screen and (max-width: 550px){
+    .header h1 {
+        font-size: 35px;
+        border: 1px solid red
+    }
 }
 
 
@@ -62,19 +69,22 @@ main > div {
 .skills-tools {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 .skills-tools .heading {
     flex-basis: 300px;
+    text-align: right;
 }
 .skills-tools .images {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
 }
-.skills-tools .images > div {
-    width: 80px;
-    height: 80px;
-    background-color: rgb(194, 194, 194);
+.skills-tools .square {
+    width: 70px;
+}
+.square:first-child {
+    color: black;
 }
 
 @media screen and (max-width: 868px) {
@@ -101,9 +111,8 @@ main > div {
     column-gap: 50px;
 }
 .stuff-made .stuff > div{
-    width: 200px;
-    height: 150px;
-    background-color: rgb(201, 201, 201);
+    border: 1px solid black;
+    width: 250px;
 }
 .stuff-made .more button {
     text-align: center;
@@ -148,6 +157,7 @@ main > div {
 }
 .find-me .heading {
     order: 2;
+    text-align: right;
 }
 .find-me .links {
     flex-basis: 75%;
@@ -160,7 +170,6 @@ main > div {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: rgb(201, 201, 201);
 }
 
 @media screen and (max-width: 868px) {
@@ -224,5 +233,19 @@ main > div {
     }
     .contact-me br {
         display: none;
+    }
+}
+@media screen and (max-width: 550px){
+    .form__names input {
+        width: 100%;
+    }
+}
+
+
+
+/* footer */
+@media screen and (max-width: 868px) {
+    footer {
+        text-align: center;
     }
 }
