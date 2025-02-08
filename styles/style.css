@@ -7,12 +7,20 @@ body {
     max-width: 1200px;
     padding: 0 30px;
 }
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
 
 main > div {
     margin: 70px 0;
 }
 
 /* header */
+header {
+    position: relative;
+}
 .header .hello-wish {
     display: flex;
     column-gap: 10px;
@@ -27,10 +35,30 @@ main > div {
     margin-top: -10px;
     font-size: 30px;
 }
+header svg {
+    width: 40px;
+    height: auto;
+    stroke: black;
+}
+.toggle {
+    stroke: white;
+    color: white;
+    border-color: white !important;
+}
+header button {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+}
 
 @media screen and (max-width: 550px){
     .header h1 {
         font-size: 35px;
+    }
+    .header .hello-wish p {
+        font-size: 30px;
     }
 }
 
@@ -62,6 +90,17 @@ main > div {
         flex-grow: 2;
     }
 }
+@media screen and (max-width: 550px){
+    .about .heading br{
+        display: none;
+    }
+    .about .heading h2 {
+        text-align: center;
+    }
+    .about .image img {
+        margin: 0 auto;
+    }
+}
 
 
 /* skills and tools section */
@@ -83,9 +122,12 @@ main > div {
     width: 70px;
 }
 .square:first-child {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
+.skill-toggle {
+    fill: #fff;
+}
 @media screen and (max-width: 868px) {
     .skills-tools {
         flex-flow: column-reverse wrap;
@@ -134,6 +176,9 @@ main > div {
 .stuff-made .more {
     align-self: center;
 }
+.stuff .stuff__section p {
+    text-align: center;
+}
 
 @media screen and (max-width: 868px) {
     .stuff-made {
@@ -142,7 +187,8 @@ main > div {
     .stuff-made .stuff {
         justify-content: space-evenly;
     }
-    .stuff-made .heading {
+    .stuff-made .heading h2{
+        text-align: center;
         align-self: center;
         margin-bottom: 40px;
     }
@@ -169,8 +215,8 @@ main > div {
     gap: 40px;
 }
 .find-me .links > div {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
@@ -199,6 +245,8 @@ main > div {
     border: none;
     font-size: 20px;
     border-bottom: 1px solid grey;
+    padding: 5px;
+    font-style: italic;
 }
 .form form {
     display: flex;
@@ -229,6 +277,9 @@ main > div {
 }
 
 @media screen and (max-width: 868px) {
+    .contact-me h2 {
+        text-align: center;
+    }
     .contact-me {
         flex-direction: column;
         align-items: center;
