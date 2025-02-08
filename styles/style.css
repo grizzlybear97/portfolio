@@ -60,6 +60,20 @@ header button {
     .header .hello-wish p {
         font-size: 30px;
     }
+    .header .hello-msg p {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 400px){
+    .header h1 {
+        font-size: 30px;
+    }
+    .header .hello-wish p {
+        font-size: 25px;
+    }
+    .header .hello-msg p {
+        font-size: 25px;
+    }
 }
 
 
